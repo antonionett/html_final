@@ -1,0 +1,141 @@
+/* Hoja de estilos "principal" (ya veremos si no es la única) para la Práctica Sitio 1 Elementos contenedores
+
+     v.0.2 (09/02/23)
+
+*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+/*
+@font-face {
+    font-family: "Corben";
+    src: url(../fonts/Corben-Bold.ttf);
+}
+*/
+
+
+/* - - Propiedades generales / iniciales - - */
+* {
+    margin: 0;
+}
+
+body {
+    background-color: blanchedalmond;
+    font-family: Montserrat, sans-serif;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 1600px;
+    margin: auto;
+}
+.actual {
+    padding-bottom: 2px;
+    /* text-decoration: underline; */
+    border-bottom: 3px solid;
+}
+
+.fila2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+/* - - - CABECERA - - - */
+
+header {
+    background-color: rgb(60, 0, 0);
+
+    /* degradado lineal */
+    background-image: linear-gradient(rgb(80, 0, 0), rgb(50,0,0));
+
+    padding: 15px 0;
+}
+
+
+
+
+
+
+/* - - - MENÚ DE NAVEGACIÓN - - - */
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+nav a {
+    color: rgb(201, 201, 201);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+nav a:hover {
+    color: whitesmoke;  
+}
+
+
+
+/* - - - BLOQUES CENTRALES - - - */
+main, aside, section {
+    background-color: rgb(255, 245, 231);
+    margin: 15px 0;
+    padding: 15px;
+}
+
+main h2 {
+    margin-bottom: 10px;
+}
+main p, aside p {
+    margin: 15px 0;
+}
+main img {
+    /* elemento líquido - flexible pero sin ser grande de su tamaño real */
+    max-width: 100%;
+}
+
+aside div {
+   /* Convertimos esta caja en un contenedor Flex */
+   display: flex;
+   justify-content: space-around
+}
+
+
+
+/* - - - PIE DE PÁGINA - - - */
+footer{
+    background-color: rgb(60, 0, 0);
+
+    /* degradado lineal */
+    background-image: linear-gradient(rgb(80, 0, 0), rgb(50,0,0));
+
+    padding: 15px 0;    
+} 
+
+footer div {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer p {
+    color: white;
+}
+/* footer p:last-child {
+    margin-left: auto;
+}  */
+
+
+footer a {
+    color: rgb(201, 201, 201);
+    text-decoration: none;
+}
+footer a:hover {
+    color: white;
+    text-decoration: underline;
+}

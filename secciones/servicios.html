@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prácticas HTML-CSS. Sitio 1</title>
+    <link rel="stylesheet" href="../css/estilo.css">
+
+    <style>
+        #flogin, #fcontact {
+            border: 1px solid #c0c0c0;
+            background-color: whitesmoke;
+            border-radius: 5px;
+            width: 90%;
+            max-width: 500px;
+            margin: 30px auto;
+            padding: 15px;
+        }
+
+        #flogin div, #fcontact div {
+            margin: 20px 0;
+        }
+
+        #flogin input, #fcontact input.caja, #fcontact textarea  {
+            width: 100%;;
+        }
+        #fcontact textarea {
+            min-height: 100px;
+            max-height: 200px;
+            resize: vertical;
+        }
+        #flogin button {
+            display: block;
+            margin: 0 auto;
+            width: 20%;
+            min-width: 100px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="contenedor">
+            <div class="fila2">
+                <h1><img src="../img/Logo_acme.svg" alt="Logo ACME"></h1>
+                <form action="" method="get" id="fsearch">
+                  <input type="search" name="q">
+                  <button type="submit">Buscar</button>
+                </form>
+            </div>
+            <nav>
+              <ul>
+                  <li><a href="../index.html">INICIO</a></li>
+                  <li><a href="empresa.html">EMPRESA</a></li>
+                  <li><a href="#" class="actual">SERVICIOS</a></li>
+                  <li><a href="#">PRODUCTOS</a></li>
+                  <li><a href="#">BLOG</a></li>
+                  <li><a href="#">CONTACTO</a></li>
+              </ul>
+          </nav>
+  
+        </div>   
+     </header>
+     
+     <div class="contenedor">
+   
+        <main>
+
+            <form action="" method="post" id="flogin">
+                <div>
+               
+                    <input type="text" autofocus required placeholder="Usuario">
+                </div>
+
+                <div>
+                    
+                    <input type="password" required placeholder="Contraseña">
+                </div>
+
+                <div>
+                    <button>Entrar</button>
+                </div>
+
+            </form>
+
+            <form action="" method="post" id="fcontact">
+
+                <div>
+                    <input type="text" required placeholder="Nombre" class="caja">
+                </div>
+                <div>
+                    <input type="email" required placeholder="Correo electrónico" class="caja">
+                </div>
+                <div>
+                    <input type="tel" placeholder="Teléfono de contacto" class="caja">
+                </div>
+                <div>
+                    <textarea name="" id="" placeholder="Describa aquí su consulta y en breve nos pondremos en contacto con uste"></textarea>
+                </div>
+                <div>
+                    <input type="checkbox" required> <label for="">He leído y acepto las condiciones del servicio</label>
+                </div>
+                <div>
+                    <button>Enviar consulta</button>
+                </div>
+
+                
+            </form>
+
+        </main>
+
+     </div>
+     
+     <footer>
+          <div class="contenedor">
+              <p>&copy; 2023 ACME Corporation, Ltd.</p>
+              <p><a href="#">Aviso Legal</a> | <a href="#">Mapa del sitio</a></p>
+          </div>
+     </footer>    
+</body>
+</html>
